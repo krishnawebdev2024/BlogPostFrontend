@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 function NewBlogs() {
   const [blogs, setBlogs] = useState([]);
-
+  http://localhost:3000/api/v1/BlogPosts
   const getBlogs = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/api/v1/BlogPosts"
+        "https://server-blogpost.onrender.com"
       );
       setBlogs(data);
       console.log(data);
