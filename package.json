@@ -4,13 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "f-dev": "vite",
-    "b-dev": "nodemon server.js",
-    "serve": "concurrently \"npm run f-dev\" \"npm run b-dev\"",
+    "start": "vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "start": "node server.js"
+    "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.7.7",
